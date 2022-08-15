@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wushuang</title>
 </head>
-<body>
-    
+<body id="app">
+    <button id="btn">click</button>
 </body>
+<script type="module">
+    let listData = [1,2,3]
+    console.log(listData)
+    let ul = document.createElement('ul')
+    listData.forEach((i,index)=>{
+        let li = document.createElement('li')
+        li.innerHTML=`list${index}`
+        li.setAttribute('style',{color:'red'})
+        ul.appendChild(li)
+    })
+    document.getElementById('app').appendChild(ul)
+    document.getElementById('btn').addEventListener('click',()=>{
+        alert('???');
+    })
+</script>
 <script type="module" src="../bundle.js"></script>
+<style></style>
 </html>
