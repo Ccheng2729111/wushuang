@@ -9,7 +9,6 @@ import { getCLS, getFID, getLCP } from "web-vitals";
 
 // getCLS(sendToAnalytics);
 // getFID(sendToAnalytics);
-// getLCP(sendToAnalytics);
 
 class Wushuang {
   cls: string;
